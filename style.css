@@ -1,0 +1,155 @@
+/* 基本設定 */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #fff;
+  background: #fafafa;
+  background-image: url('images/bgimage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* タイトル中央寄せと文字サイズ調整（2em→1.4em） */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+/* 全てのp, li要素の文字サイズを調整（2em→1.4em） */
+p, li {
+  font-size: 1.4em;
+  color: #fff;
+}
+
+/* About Meセクション中央揃え */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* セクション共通 */
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ヒーロー部分 */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f0f0f0a0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.catch {
+  font-size: 1.4em;
+  color: #fff;
+  text-align: center;
+}
+
+/* skillsリスト中央寄せ・縦並び */
+.skills ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.skills li {
+  margin: 10px 0;
+  display: block;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+/* ボタン中央寄せ */
+.btn {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s;
+  text-align: center;
+  font-size: 1em; /* ボタンは通常サイズ */
+}
+
+/* ボタンホバー */
+.btn:hover {
+  background: #555;
+}
+
+/* フッター中央寄せ */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f0f0f0a0;
+  font-size: 1.2em;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+  body {
+    font-size: 90%;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  section {
+    padding: 30px 10px;
+    max-width: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+  }
+
+  p, li, .catch, footer {
+    font-size: 1em;
+  }
+}
